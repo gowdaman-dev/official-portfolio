@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+  font-family: 'outdown-b';
+  src: url('../public/fonts/outward-block.ttf');
+}
+
+@font-face {
+  font-family: 'outdown-br';
+  src: url('../public/fonts/outward-borders.ttf');
+}
+
+@font-face {
+  font-family: 'outdown-r';
+  src: url('../public/fonts/outward-round.ttf');
+}
+
+@font-face {
+  font-family: 'justus';
+  src: url('../public/fonts/Justus-Roman.ttf');
+}
+
+@font-face {
+  font-family: 'migra';
+  src: url('../public/fonts/Migra-Extralight.ttf');
+}
+
+@font-face {
+  font-family: 'migra-eb';
+  src: url('../public/fonts/Migra-Extrabold.ttf');
+}
+
+.line-space {
+  line-height: 1px;
+}
+
+.font-migra {
+  font-family: 'migra';
+}
+
+.font-outdown {
+  font-family: 'outdown-b';
+  line-height: .9;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+  line-height: .9;
+}
+
+.font-migra-bold {
+  font-family: 'migra-eb';
+  font-weight: 900;
+}
+
+.mainimg {
+  filter: saturate(1.23) contrast(.8);
+}
+
+.menulink {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  z-index: 1;
+}
+
+.menulink::before {
+  content: "";
+  display: flex;
+  position: absolute;
+  background: white;
+  height: 2px;
+  width: 0px;
+  margin-top: 2px;
+  z-index: 0;
+  transition: .5s;
+}
+
+.menulink:hover.menulink:nth-child(1)::before {
+  width: 45px;
+}
+
+.menulink:hover.menulink:nth-child(2)::before {
+  width: 45px;
+}
+
+.menulink:hover.menulink:nth-child(3)::before {
+  width: 60px;
+}
+
+.homehover {
+  overflow: hidden;
+  transition: .8s linear ease-in-out;
+}
+
+.flexanime {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.maskbg{
+  filter: contrast(.8) saturate(1.5);
+}
